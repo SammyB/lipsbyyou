@@ -121,6 +121,21 @@ LBT.Core = (function () {
 		$(document).on('open', '.remodal', function () {
 			var modal = $(this);
 		});
+
+		var inst = $.remodal.lookup[$('[data-remodal-id=modal]').data('remodal')];
+		// check if resize happens, then close email popup because its buggy.
+		$(window).resize(function() {
+			if(this.resizeTO) clearTimeout(this.resizeTO);
+				this.resizeTO = setTimeout(function() {
+				$(this).trigger('resizeEnd');
+			}, 500);
+		});
+
+		$(window).bind('resizeEnd', function() {
+			if ($('.remodal-overlay').is(':visible')){
+				inst.close();
+			}
+		});
 	},
 	scrollBaby = function () {
 		// start button

@@ -1,4 +1,3 @@
-@charset "CP850";
 /* ======================================
  ISOBAR AUSTRALIA, CANBERRA
  Front end Guru: Sam Brunno
@@ -1099,9 +1098,9 @@ body.remodal_active .remodal {
 .remodal-close:after {
   display: block;
   font-size: 28px;
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
-  content: "×";
-  line-height: 28px;
+  font-family: Arial;
+  content: "\0078";
+  line-height: 24px;
   cursor: pointer;
   text-decoration: none;
   color: #3e5368;

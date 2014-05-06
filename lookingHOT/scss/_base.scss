@@ -957,9 +957,9 @@ body.remodal_active .remodal {
     display: block;
 
     font-size: 28px;
-    font-family: $standard-font;
-    content: "×";
-    line-height: 28px;
+    font-family: Arial;
+    content: "\0078";
+    line-height: 24px;
     cursor: pointer;
     text-decoration: none;
     color: #3e5368;

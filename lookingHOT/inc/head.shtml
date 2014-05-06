@@ -1,0 +1,76 @@
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>LipsByYou | Design your own custom lip balm! | Handmade with love in Canberra, Australia.</title>
+
+	<meta name="keywords" content="Lipsbyyou, lipsbytanja, custom lip balm, lip balm, lipbalm, canberra, australia, skin balm, skin care, lip care, lips by you, lips by tanja." />
+	<meta name="description" content="Design your own custom lip balm using natural ingredients and delicious colours and flavours. You'll get to pick what's in your balm and best of all it will be your own unique creation!" />
+
+	<meta property="og:site_name" content='Lipsbyyou.com.au'/>
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content="http://www.lipsbyyou.com/"/>
+
+	<meta property="og:image" content="http://www.lipsbyyou.com/lookingHOT/images/facebook.png"/>
+	<meta itemprop="image" content="http://www.lipsbyyou.com/lookingHOT/images/facebook.png"/>
+	<link rel="image_src" href="http://www.lipsbyyou.com/lookingHOT/images/facebook.png" />
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="format-detection" content="telephone=no" />
+
+	<meta name="robots" content="noydir" />
+	<meta name="robots" content="noodp" />
+
+	<link rel="icon" href="/lookingHOT/favicon.ico" />
+	<link rel="SHORTCUT ICON" href="/lookingHOT/favicon.ico" />
+
+	<!-- Standard iPhone --> 
+	<link rel="apple-touch-icon" sizes="57x57" href="/lookingHOT/images/apple-touch-icon-iphone.png" />
+	<!-- Retina iPhone --> 
+	<link rel="apple-touch-icon" sizes="114x114" href="/lookingHOT/images/apple-touch-icon-iphone4.png" />
+	<!-- Standard iPad --> 
+	<link rel="apple-touch-icon" sizes="72x72" href="/lookingHOT/images/apple-touch-icon-ipad.png" />
+	<!-- Retina iPad --> 
+	<link rel="apple-touch-icon" sizes="144x144" href="/lookingHOT/images/apple-touch-icon-ipad-144.png" />
+
+	<!--
+	/**
+	 * @license
+	 * MyFonts Webfont Build ID 2798473, 2014-04-21T20:26:23-0400
+	 * 
+	 * The fonts listed in this notice are subject to the End User License
+	 * Agreement(s) entered into by the website owner. All other parties are 
+	 * explicitly restricted from using the Licensed Webfonts(s).
+	 * 
+	 * You may obtain a valid license at the URLs below.
+	 * 
+	 * Webfont: D.I.Y. Time Hand by Latinotype
+	 * URL: http://www.myfonts.com/fonts/latinotype/d-i-y-time/hand/
+	 * Copyright: Copyright (c) 2014 by Guisela Mendoza. All rights reserved.
+	 * Licensed pageviews: 10,000
+	 * 
+	 * 
+	 * License: http://www.myfonts.com/viewlicense?type=web&buildid=2798473
+	 * 
+	 * © 2014 MyFonts Inc
+	*/
+	-->
+	<link rel="stylesheet" type="text/css" href="/lookingHOT/css/fonts.css">
+
+	<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+
+	<link href="/lookingHOT/css/style.css" rel="stylesheet" media="screen" />
+	
+	<!--[if lte IE 7]>
+		<link rel="stylesheet" href="/css/ie7-style.css" />
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:700' rel='stylesheet' type='text/css'>
+	<![endif]-->
+
+	<!-- IE fix for array indexOF & html5shiv-->
+	<!--[if lt IE 9]>
+	<script src="/lookingHOT/js/html5shiv.js"></script>
+	<![endif]-->
+
+	<script type="text/javascript" src="/lookingHOT/js/modernizr.custom.min.js"></script>

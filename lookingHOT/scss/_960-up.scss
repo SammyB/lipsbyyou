@@ -1,0 +1,26 @@
+/* ==|== grid ============================================================= */
+.grid__span100 { width: 100.00%; float: left; }
+.grid__span75 { width: 75.00%; float: left; }
+.grid__span50 { width: 50.00%; float: left; }
+.grid__span33 { width: 33.33%; float: left;
+	.ie7 & { width: 33.32% }
+}
+.grid__span25 { width: 25.00%; float: left; }
+
+#step4 {
+	min-height: 860px;
+}
+#lipsFour {
+	min-height: 950px;
+}
+
+/* ==|== global helpers ================================================== */
+body {background: url("/lookingHOT/images/bg-1460.jpg") top center no-repeat}
+body.active {background: url("/lookingHOT/images/bg-1460_active.jpg") #4bdb9e top center no-repeat}
+.container { width: 960px; margin: 0 auto; overflow: hidden; position: relative; }
+
+/* ==|== modules ================================================== */
+.container--shadow { padding: 10px 10px 30px 10px; }
+.container__shadow { background-color: #f2f3f2; box-shadow: 0 0 10px $grey; }
+.container__shadow-white { background-color: $white; box-shadow: 0 0 10px $grey; }
+.shadow--spacing {margin: 30px 5px 30px 30px;box-shadow: 0 0 10px $grey;}

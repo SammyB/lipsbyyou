@@ -1,0 +1,39 @@
+.grid__span50 { width: 50.00%; float: left; }
+.grid__span33 { width: 50.00%; float: left; }
+.grid__span25 { width: 50.00%; float: left; }
+
+body {background: url("/lookingHOT/images/bg-768.jpg") top center no-repeat}
+
+#intro {
+	margin-top: 75px;
+	min-height:660px;
+}
+#lets-begin {
+	margin-top: 65px;
+	.description {
+		padding: 0px 60px;
+	}
+}
+
+#first-up {
+	min-height: 580px;
+}
+#lipsFive {
+	.tipr_content {width: 320px;}
+}
+
+.lips {
+	a.balms {
+		span.text {margin-top: 160px;}
+	}
+}
+
+h1 {font-size: 35px;}
+
+.no--space {margin: 0 0 0 30px;}
+.no--space-left {margin: 0 0 0 10px;}
+.spacing--left {margin: 0 0 0 40px;}
+.spacing--top-bottom {margin: 30px 0 0 30px;}
+.spacing--top-bottom-half {margin: 20px 0 30px 30px;}
+.border--right {border-right:1px solid $grey;}
+.border--left {border-left:1px solid $grey;}

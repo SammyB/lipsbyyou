@@ -1,0 +1,137 @@
+// UTILITIES & VARIABLES
+
+/* ==|== variables ========================================================== */
+$bezier: cubic-bezier(0.720, 0.065, 0.275, 0.885);
+
+// breakpoints
+$break-small: 480px;
+$break-medium: 768px;
+$break-large: 960px;
+$break-xlarge: 1460px;
+
+/* ==|== colour ======================================================= */
+
+$black: #000000;
+$light-black: #161616;
+$white: #ffffff;
+$grey-text: #6D6D6D;
+
+$dark-grey: #272727;
+$grey: #5C5C5C;
+$medium-grey: #cecece;
+$light-grey: #a0a0a0;
+$lighter-grey: #f4f4f4;
+$lightest-grey: #fdfdfd;
+
+$blue: #00789a;
+$light-blue: #009fbf;
+$lighter-blue: #009fbf;
+
+$green: #4ad298;
+
+$red: #dd1212;
+$red-dark: #a60022;
+$red-darker: #79192d;
+
+/* ==|== colour config =================================================
+
+- blacks, whites and greys can remain as variables, all blues
+  need to be mixins so they can be overridden on the changes.
+
+======================================================================== */
+
+$background-mono: $black;
+$background-mono-light: #f0f0f0;
+
+$background:  $blue;
+
+$border-mono: $black;
+
+$link: $black;
+
+$error: $red;
+
+$text-highlight: $blue;
+$text-alt-highlight: $blue;
+
+/* ==|== type ========================================================== */
+$root-font-size: 21px;
+$standard-font: 'Open Sans', Arial, Helvetica, sans-serif;
+
+%pseudo-header { font-family: $standard-font; display: block; margin-bottom: 5px; letter-spacing: 0;  }
+%meta { font-size: $root-font-size }
+
+/* ==|== layout ======================================================== */
+
+%page-layout { max-width: 1200px; min-width: 960px; margin: 0 auto; position: relative; overflow: hidden;  }
+
+/* ==|== sprites ======================================================= */
+
+%sprite { background-image: url(/lookingHOT/images/sprite.png); background-size: 1000px 1100px; background-repeat: no-repeat; display: block; text-indent: -9999px;
+    .oldie & { background-image: url(/lookingHOT/images/sprite-small.png) }
+}
+%sprite-circles { background-image: url(/lookingHOT/images/spriteCircles.png); background-size: 1000px 1100px; background-repeat: no-repeat; display: block;
+    .oldie & { background-image: url(/lookingHOT/images/spriteCircles-small.png) }
+}
+
+// The micro clearfix http://nicolasgallagher.com/micro-clearfix-hack/
+@mixin clearfix() {
+	*zoom:1;
+	&:before,
+	&:after {content:"";display:table;}
+	&:after {clear:both;}
+}
+
+// opacity
+@mixin opacity($opacity) {
+	opacity: $opacity;
+	$opacity-ie: $opacity * 100;
+	filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+// TEXT SHADOW
+@mixin text-shadow($x: 2px, $y: 2px, $blur: 5px, $color: rgba(0,0,0,.4)) {
+    text-shadow: $x $y $blur $color;
+}
+
+// BOUNCE
+@mixin animation-bounce() {
+    -webkit-animation-delay: -.2.5s;
+    animation-delay: -.2.5s;
+
+    -webkit-animation: hyper 2s infinite;
+    animation: hyper 2s infinite;
+
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+    -webkit-transition: padding .3s, bottom .3s;
+    transition: padding .3s, bottom .3s;
+}
+@mixin animation-sway() {
+    -webkit-animation-delay: -1s;
+    animation-delay: -1s;
+
+    -webkit-animation: bobble 5s ease-in-out infinite;
+    animation: bobble 5s ease-in-out infinite;
+
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+    -webkit-transition: padding .3s, bottom .3s;
+    transition: padding .3s, bottom .3s;
+}
+
+// transitions
+@mixin transition($transition-property, $transition-time, $method) {
+    -webkit-transition: $transition-property $transition-time $method;
+    -moz-transition: $transition-property $transition-time $method;
+    -ms-transition: $transition-property $transition-time $method;
+    -o-transition: $transition-property $transition-time $method;
+    transition: $transition-property $transition-time $method;
+}
+@mixin multi-transition($transition-property, $transition-time, $transition-property2, $transition-time2, $method) {
+    -webkit-transition: $transition-property $transition-time,$transition-property2 $transition-time2 $method;
+    -moz-transition: $transition-property $transition-time,$transition-property2 $transition-time2 $method;
+    -ms-transition: $transition-property $transition-time,$transition-property2 $transition-time2 $method;
+    -o-transition: $transition-property $transition-time,$transition-property2 $transition-time2 $method;
+    transition: $transition-property $transition-time,$transition-property2 $transition-time2 $method;
+}

@@ -1,0 +1,185 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]> <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]> <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+	<head>
+		<!--#include virtual="/lookingHOT/inc/head.shtml" -->
+	</head>
+	<body>
+
+		<style>
+			.loader {display: none !important;}
+			.welcome-text {font-size: 100px;line-height: 104px;color: #a60122;}
+		</style>
+		<div id="fb-root"></div>
+		<script>
+			window.fbAsyncInit = function() {
+				FB.init({appId:'1441420402766808',oauth:true,status:true,cookie:true,xfbml:true});
+				FB.Event.subscribe("auth.logout", function() {
+			    	var cookies = $.cookie();
+					for(var cookie in cookies) {
+						$.removeCookie(cookie);
+					}
+					var cookies = document.cookie.split(";");
+					for(var i=0; i < cookies.length; i++) {
+						var equals = cookies[i].indexOf("=");
+						var name = equals > -1 ? cookies[i].substr(0, equals) : cookies[i];
+						document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
+					}
+					//reload page
+					setTimeout(window.location.reload(), 2000);
+				});
+			};
+			function fb_login(){
+				FB.login(function(response) {
+					if (response.authResponse) {
+						console.log('Welcome to lips by you! Fetching your information.... ');
+			            //console.log(response); // dump complete info
+			            access_token = response.authResponse.accessToken; //get access token
+			            user_id = response.authResponse.userID; //get FB UID
+			            FB.api('/me', function(response) {
+			                user_email = response.email; //get user email
+			                user_name = response.name; //get user email
+			          		// lets welcome the lucky person!
+			          		$('h1.start-welcome span').html(user_name);
+			          		// create cookie of there name to remember
+			          		$.cookie('facebookName', user_name);
+			            });
+			            // lets start your journey...
+			            $('#intro').hide();
+			            // let me know its active bro!
+			            LBT.Elements.$body.addClass('active');
+			            // lets begin
+			            $('#lets-begin').show();
+			            $('#footer').show();
+			        } else {
+			            //user hit cancel button
+			            console.log('User cancelled login or did not fully authorize.');
+			        }
+			    }, {
+			        scope: 'publish_stream,email'
+			    });
+			};
+			(function() {
+			    var e = document.createElement('script');
+			    e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+			    e.async = true;
+			    document.getElementById('fb-root').appendChild(e);
+			}());
+
+			// Load the SDK asynchronously
+			(function(d){
+				var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+				if (d.getElementById(id)) {return;}
+				js = d.createElement('script'); js.id = id; js.async = true;
+				js.src = "//connect.facebook.net/en_US/all.js";
+				ref.parentNode.insertBefore(js, ref);
+			}(document));
+
+			function logout(){
+				var cookies = $.cookie();
+				for(var cookie in cookies) {
+					$.removeCookie(cookie);
+				}
+				var cookies = document.cookie.split(";");
+				for(var i=0; i < cookies.length; i++) {
+					var equals = cookies[i].indexOf("=");
+					var name = equals > -1 ? cookies[i].substr(0, equals) : cookies[i];
+					document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
+				}
+				// reload page
+				setTimeout(window.location.reload(), 2000);
+			}
+		</script>
+		<div id="content">
+			<div class="loader"></div>
+			<div id="intro" class="container" style="display:block !important;">
+
+				<div class="grid">
+			        <div class="grid__row">
+
+			        	<!-- logo -->
+						<div class="grid__span100">
+							<div class="container">
+								<div class="logo-container">
+									<h1 class="logo">Lips By You - Canberra, Australia Custom Lip Balms.</h1>
+									<h1 class="welcome-text">Launching in ... 4 Days!</h1>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+		<!-- JavaScript at the bottom for fast page loading -->
+
+		<!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="/lookingHOT/js/jquery-1.9.1.min.js"><\/script>')</script>   
+
+		<!-- VJ custom js, to be minified on deployment -->
+		<script type="text/javascript" src="/lookingHOT/js/plugins.js"></script>
+		<script type="text/javascript" src="/lookingHOT/js/core.js"></script>
+
+        <!-- // END \\ -->
+
+		<script type="text/javascript">
+			$.validator.addMethod('defaultCheck', function (value, element) {if (element.value == element.defaultValue) {return false;}return true;});
+
+			// lets load sprites before we start anything, shall we?
+			function loadSprite(src) {
+				var deferred = $.Deferred();
+				var sprite = new Image();
+				sprite.onload = function() {
+					deferred.resolve();
+				};
+				sprite.src = src;
+				return deferred.promise();
+			}
+
+			$(document).ready( function() {
+				// my pre-loader, simple and sweet!
+				var loaders = [];
+				// sprites
+				loaders.push(loadSprite('/lookingHOT/images/sprite.png'));
+				loaders.push(loadSprite('/lookingHOT/images/sprite-small.png'));
+				loaders.push(loadSprite('/lookingHOT/images/spriteCircles.png'));
+				loaders.push(loadSprite('/lookingHOT/images/spriteCircles-small.png'));
+				// background
+				loaders.push(loadSprite('/lookingHOT/images/bg-480.jpg'));
+				loaders.push(loadSprite('/lookingHOT/images/bg-960_active.jpg'));
+				loaders.push(loadSprite('/lookingHOT/images/step1-bg_960.jpg'));
+				// if on mobile no need to load these
+				if (!Modernizr.touch) {
+					loaders.push(loadSprite('/lookingHOT/images/step1-bg.jpg'));
+					loaders.push(loadSprite('/lookingHOT/images/step2-bg.jpg'));
+					loaders.push(loadSprite('/lookingHOT/images/step4-bg.jpg'));
+					loaders.push(loadSprite('/lookingHOT/images/step5-bg.jpg'));
+					loaders.push(loadSprite('/lookingHOT/images/bg-1460_active.jpg'));
+					loaders.push(loadSprite('/lookingHOT/images/bg-1920_active.jpg'));
+				}
+				$.when.apply(null, loaders).done(function() {
+					// callback when everything was loaded
+					//LBT.Core.run();
+				});				
+			});
+		</script>
+		<!-- Google Analytics - make sure to set the account code and any customizations required -->
+		<script type="text/javascript">
+		
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-50349239-1', 'lipsbyyou.com');
+			ga('send', 'pageview');
+
+		</script> 
+
+	</body>
+</html>

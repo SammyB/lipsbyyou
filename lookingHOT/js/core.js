@@ -166,11 +166,30 @@ LBT.Core = (function () {
 		LBT.Elements.$cart.click(function(e){
 			var cartVerify = $(this).attr('data-cartSection');
 
-			$(this).parents('#lips'+cartVerify).find('a.cart').removeClass('active');
-    		$(this).addClass('active');
+			if ($(this).hasClass('balms')) {
+				// select up to 2 flavours! Thanks Daniel for feedback.
+				if ($(this).parents('#lips'+cartVerify).find('a.active').size() >= 2) {
+					$(this).parents('#lips'+cartVerify).find('a.active').removeClass('active');
+					$('#lipCart-' + cartVerify).html('');
+				}
+	    		$(this).addClass('active');
+	    		if ($('#lipCart-' + cartVerify).text() != ''){
+		    		// when clicking an ingredient, add to bottom of review
+					$('#lipCart-' + cartVerify).append(', '+$(this).attr('data-cart'));
+					$('#lipCart-' + cartVerify).css({ 'font-size' : "15px" });
+				} else {
+					$('#lipCart-' + cartVerify).append($(this).attr('data-cart'));
+					$('#lipCart-' + cartVerify).css({ 'font-size' : "inherit" });
+				}
+			}
+			else {
+				$(this).parents('#lips'+cartVerify).find('a.cart').removeClass('active');
+	    		$(this).addClass('active');
 
-			// when clicking an ingredient, add to bottom of review
-			$('#lipCart-' + cartVerify).html($(this).attr('data-cart'));
+	    		// when clicking an ingredient, add to bottom of review
+				$('#lipCart-' + cartVerify).html($(this).attr('data-cart'));
+    		}
+
 			$('.current--cart').addClass('show').show();
 
 			// once entered all values

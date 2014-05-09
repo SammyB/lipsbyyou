@@ -224,7 +224,6 @@ if(!file_exists('counter.txt')){
 								<p class="description">
 									Design your own custom lip balm in 5 easy steps using natural ingredients and delicious colours and flavours. You'll get to pick what's in your balm and best of all it will be your own unique creation!
 								</p>
-								<p class="counter"> <?php echo file_get_contents('counter.txt'); ?> people have made their own lip balm.</p>
 								<a href="#" class="start-making letsGoBaby" data-click="step1">Start Making</a>
 							</div>
 						</div>
@@ -286,7 +285,7 @@ if(!file_exists('counter.txt')){
 										<span class="tipr" data-tip="<strong>Shea Butter...</strong><br>is a non greasy butter that absorbs well into the skin, enriching it with vitamens A and E.<br>Select me if you want to help keep your lips supple and smooth."></span>
 									</a-->
 
-									<!--a href="#" class="next letsGoBaby" data-click="lipsTwo">Next</a-->
+									<a href="#" class="next letsGoBaby" data-click="lipsTwo">Next</a>
 								</div>							
 							</div>
 						</div>
@@ -333,7 +332,7 @@ if(!file_exists('counter.txt')){
 										<span class="tipr" data-tip="<strong>Olive oil</strong> helps to condition lips and skin and give a healthy radiant shine. <strong>Add me</strong> to your balm if you want your lips to be smooth and shiny all day long!"></span>
 									</a>
 
-									<!--a href="#" class="next letsGoBaby" data-click="lipsThree">Next</a-->
+									<a href="#" class="next letsGoBaby" data-click="lipsThree">Next</a>
 								</div>
 			        		</div>
 			        	</div>
@@ -380,7 +379,7 @@ if(!file_exists('counter.txt')){
 										<span class="tipr" data-tip="<strong>Orange flower</strong> boasts a range of skin benefits not to mention its intensely relaxing scent. <strong>Add me</strong> to your balm if you want to awaken your senses whilst adding some nutrients back into your lips."></span>
 									</a>
 
-									<!--a href="#" class="next letsGoBaby" data-click="lipsFour">Next</a-->
+									<a href="#" class="next letsGoBaby" data-click="lipsFour">Next</a>
 								</div>
 			        		</div>
 			        	</div>
@@ -410,7 +409,7 @@ if(!file_exists('counter.txt')){
 										<span class="text">Vanilla</span>
 										<span class="tick"></span>
 									</a>
-									<a href="#" class="cart lemon balms" data-cartSection="Four" data-cart="LemonMeringue">
+									<a href="#" class="cart lemon balms" data-cartSection="Four" data-cart="Lemon Meringue">
 										<span class="text">Lemon Meringue</span>
 										<span class="tick"></span>
 									</a>
@@ -446,7 +445,7 @@ if(!file_exists('counter.txt')){
 										<span class="text">Raspberry</span>
 										<span class="tick"></span>
 									</a>
-									<a href="#" class="cart bubblegum balms" data-cartSection="Four" data-cart="BubbleGum">
+									<a href="#" class="cart bubblegum balms" data-cartSection="Four" data-cart="Bubble Gum">
 										<span class="text">Bubble Gum</span>
 										<span class="tick"></span>
 									</a>
@@ -463,7 +462,7 @@ if(!file_exists('counter.txt')){
 										<span class="tick"></span>
 									</a>
 
-									<!--a href="#" class="next letsGoBaby" data-click="lipsFive">Next</a-->
+									<a href="#" class="next letsGoBaby" data-click="lipsFive">Next</a>
 								</div>
 			        		</div>
 			        	</div>

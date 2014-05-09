@@ -1408,7 +1408,7 @@ body.remodal_active .remodal {
   #step4 {
     background: url("/lookingHOT/images/step4-bg.jpg") top center no-repeat; }
     #step4 .description {
-      padding: 20px 0 !important; }
+      padding: 20px 0 0 0 !important; }
 
   #step5 {
     background: url("/lookingHOT/images/step5-bg.jpg") top center no-repeat;

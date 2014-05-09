@@ -398,7 +398,7 @@ if(!file_exists('counter.txt')){
 									<div class="description">
 										Let's get jiggy with it<br>
 										<span>Colour and Flavour-up your balm with something tantalising</span><br>
-										<div class="tooltip-info"><span class="icon"></span> Select up to two, if you're wanting to mix it up!</div>
+										<div class="tooltip-info"><span class="icon"></span> Select up to two flavours to make yours extra unique!</div>
 									</div>
 
 									<!-- start balms -->

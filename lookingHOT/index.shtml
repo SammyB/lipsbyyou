@@ -206,7 +206,7 @@
 										<span class="tipr" data-tip="<strong>Shea Butter...</strong><br>is a non greasy butter that absorbs well into the skin, enriching it with vitamens A and E.<br>Select me if you want to help keep your lips supple and smooth."></span>
 									</a-->
 
-									<!--a href="#" class="next letsGoBaby" data-click="lipsTwo">Next</a-->
+									<a href="#" class="next letsGoBaby" data-click="lipsTwo">Next</a>
 								</div>							
 							</div>
 						</div>
@@ -253,7 +253,7 @@
 										<span class="tipr" data-tip="<strong>Olive oil</strong> helps to condition lips and skin and give a healthy radiant shine. <strong>Add me</strong> to your balm if you want your lips to be smooth and shiny all day long!"></span>
 									</a>
 
-									<!--a href="#" class="next letsGoBaby" data-click="lipsThree">Next</a-->
+									<a href="#" class="next letsGoBaby" data-click="lipsThree">Next</a>
 								</div>
 			        		</div>
 			        	</div>
@@ -300,7 +300,7 @@
 										<span class="tipr" data-tip="<strong>Orange flower</strong> boasts a range of skin benefits not to mention its intensely relaxing scent. <strong>Add me</strong> to your balm if you want to awaken your senses whilst adding some nutrients back into your lips."></span>
 									</a>
 
-									<!--a href="#" class="next letsGoBaby" data-click="lipsFour">Next</a-->
+									<a href="#" class="next letsGoBaby" data-click="lipsFour">Next</a>
 								</div>
 			        		</div>
 			        	</div>
@@ -318,7 +318,8 @@
 									</div>
 									<div class="description">
 										Let's get jiggy with it<br>
-										<span>Colour and Flavour-up your balm with something tantalising</span>
+										<span>Colour and Flavour-up your balm with something tantalising</span><br>
+										<div class="tooltip-info"><span class="icon"></span> Select up to two flavours to make yours extra unique!</div>
 									</div>
 
 									<!-- start balms -->
@@ -383,7 +384,7 @@
 										<span class="tick"></span>
 									</a>
 
-									<!--a href="#" class="next letsGoBaby" data-click="lipsFive">Next</a-->
+									<a href="#" class="next letsGoBaby" data-click="lipsFive">Next</a>
 								</div>
 			        		</div>
 			        	</div>

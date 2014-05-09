@@ -1,0 +1,78 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]> <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]> <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+	<head>
+		<!--#include virtual="/lookingHOT/inc/head.shtml" -->
+	</head>
+	<body>
+		<div id="content">
+			<div class="loader"></div>
+			<div id="intro" class="container" style="display:block !important;min-height: 720px;">
+
+				<div class="grid">
+			        <div class="grid__row">
+
+			        	<!-- logo -->
+						<div class="grid__span100">
+							<div class="container">
+								<div class="logo-container">
+									<a href="http://www.lipsbyyou.com/" target="_self"><h1 class="logo">Lips By You - Canberra, Australia Custom Lip Balms.</h1></a>
+								</div>
+							</div>
+						</div>
+
+						<form id="whoAreYou" name="whoAreYou">
+							<div class="grid__span100">
+								<div class="container">
+									<div class="inputBox" style="font-family: 'Open Sans', Arial, Helvetica, sans-serif;">
+
+										<p style="margin: 0 30px 0 30px;">Sorry the page you we're looking for cannot be found :(</p>
+										<p style="margin: 0 30px 0 30px;">Please click on the logo to go back and start your creation!</p>
+
+									</div>
+								</div>
+							</div>
+						</form>
+
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+		<!-- footer -->
+		<div id="footer">
+			<div class="container">
+				<div class="grid">
+					<div class="grid__row">
+						<div class="grid__span100">
+							<div class="container">
+								<div class="logo-container">
+									<a href="http://www.lipsbyyou.com/" target="_self"><h1 class="logo">Lips By You - Canberra, Australia Custom Lip Balms.</h1></a>
+								</div>
+
+								<p class="description">Stay in touch on social:</p>
+
+								<div class="social">
+									<a href="http://www.facebook.com/lipsbytanja" target="_blank" class="social--links facebook">Follow us on Facebook.</a>
+									<a href="http://www.twitter.com/lipsbytanja" target="_blank" class="social--links twitter">Follow us on Twitter.</a>
+									<a data-remodal-target="modal" href="#modal" class="social--links mail">Email us anytime.</a>
+								</div>
+
+								<p class="description top--padding">
+									lipsbyyou is brought to you by:<br>
+									<a href="http://www.lipsbytanja.com" target="_blank"><img src="/lookingHOT/images/lipsbytanja-logo.png" alt="Lipsbytanja.com" title="Lipsbytanja.com"></a>
+								</p>
+
+								<p class="copyright">Copyright &copy; 2014 <a href="http://www.lipsbytanja.com" target="_blank">lipsbytanja</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+<!--#include virtual="/lookingHOT/inc/footer.shtml" -->

@@ -1,0 +1,74 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]> <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]> <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+	<head>
+		<!--#include virtual="/inc/head.shtml" -->
+	</head>
+	<body style="background:none !important;">
+
+		<style>
+			.loader {display: none !important;}
+			.welcome-text {
+				font-size: 16px;line-height: 104px;color: #fff;
+				position: relative;
+				top: -85px;
+				left: 3px;
+				/* -webkit-transform: rotate(-20deg); */
+			}
+			.welcome-text span {font-family: 'Open Sans', Arial;font-size: 10px;}
+
+			h1.logo {
+				-webkit-animation-delay: -0.2 0.5s;
+				animation-delay: -0.2 0.5s;
+				-webkit-animation: hyper 0s infinite !important;
+				animation: hyper 0s infinite !important;
+				-webkit-transform-origin: center bottom;
+				transform-origin: center bottom;
+				-webkit-transition: padding 0s !important, bottom 0s !important;
+				transition: padding 0s !important, bottom 0s !important;
+
+				/* background-image: url(/images/lby.png) !important;
+				background-size: 180px 180px !important;
+				background-position: 0px 0px !important; */
+			}
+		</style>
+
+		<div id="content">
+			<div class="loader"></div>
+			<div id="intro" class="container" style="display:block !important;">
+
+				<div class="grid">
+			        <div class="grid__row">
+
+			        	<!-- logo -->
+						<div class="grid__span100">
+							<div class="container">
+								<div class="logo-container">
+									<h1 class="logo">Lips By You - Canberra, Australia Custom Lip Balms.</h1>
+									<h1 class="welcome-text"><span>Sarah-Louise Balm</span></h1>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+		<!-- JavaScript at the bottom for fast page loading -->
+
+		<!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="/js/jquery-1.9.1.min.js"><\/script>')</script>   
+
+		<!-- VJ custom js, to be minified on deployment -->
+		<script type="text/javascript" src="/js/plugins.js"></script>
+		<script type="text/javascript" src="/js/core.js"></script>
+
+        <!-- // END \\ -->
+
+	</body>
+</html>

@@ -187,6 +187,7 @@ body.active {background: url("/images/bg-960_active.jpg") #4bdb9e top center no-
 		background-position: -274px -199px;
 		text-align: center;
 		margin: 0 auto;
+		outline:none;
 		&:hover {
 			background-position: -274px -261px;
 		}
@@ -221,7 +222,7 @@ body.active {background: url("/images/bg-960_active.jpg") #4bdb9e top center no-
 	min-height:760px;
 	background-size: cover;
 	.lips {
-		min-height: 720px;
+		min-height: 760px;
 	}
 }
 

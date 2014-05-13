@@ -451,7 +451,8 @@ body.active {
     height: 60px;
     background-position: -274px -199px;
     text-align: center;
-    margin: 0 auto; }
+    margin: 0 auto;
+    outline: none; }
     #lets-begin a.start-making:hover {
       background-position: -274px -261px; }
 
@@ -483,7 +484,7 @@ body.active {
   min-height: 760px;
   background-size: cover; }
   #step5 .lips {
-    min-height: 720px; }
+    min-height: 760px; }
 
 .lips {
   margin: 0 auto;

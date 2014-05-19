@@ -214,7 +214,10 @@ if(!file_exists('counter.txt')){
 					<div class="grid__span100">
 						<div class="container">
 							<h1 class="logo">Lips By You - Canberra, Australia Custom Lip Balms.</h1>
-							<h1 class="start-welcome">Welcome <span class="introductionsName"></span></h1>
+							<h1 class="start-welcome">
+								<span class="logo-welcome">Welcome</span>
+								<span class="introductionsName"></span>
+							</h1>
 						</div>
 					</div>
 
@@ -649,6 +652,7 @@ if(!file_exists('counter.txt')){
 			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
 			ga('create', 'UA-50349239-1', 'lipsbyyou.com');
+			ga('require', 'displayfeatures');
 			ga('send', 'pageview');
 
 		</script> 

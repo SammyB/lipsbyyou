@@ -9,13 +9,13 @@
 /* ==|== type ========================================================== */
 /* ==|== layout ======================================================== */
 /* ==|== sprites ======================================================= */
-#intro .logo-welcome, #intro .logo, #intro .inputBox .submit, #intro .inputBox .fb-login, #intro .inputBox .twitter-login, #lets-begin .logo, #lets-begin a.start-making, .lips .heading, .lips a.cart.active span.tick, .lips span.tipr, .lips a.next, .lips .tooltip-info span.icon, a.back, #lipsFour a.coconut, #lipsFour a.vanilla, #lipsFour a.lemon, #lipsFour a.honey, #lipsFour a.passionfruit, #lipsFour a.orange, #lipsFour a.mango, #lipsFour a.peach, #lipsFour a.strawberry, #lipsFour a.watermelon, #lipsFour a.raspberry, #lipsFour a.bubblegum, #lipsFour a.spearmint, #lipsFour a.apple, #lipsFour a.chocolate, #lipsFive .start-again, #lipsFive .buyNowFinished, #footer .logo-container .logo, #footer a.social--links, .icon--small {
+#intro .logo-welcome, #intro .logo, #intro .inputBox .submit, #intro .inputBox .fb-login, #intro .inputBox .twitter-login, #lets-begin .logo, #lets-begin .start-welcome span.logo-welcome, #lets-begin a.start-making, .lips .heading, .lips a.cart.active span.tick, .lips span.tipr, .lips a.next, .lips .tooltip-info span.icon, a.back, #lipsFour a.coconut, #lipsFour a.vanilla, #lipsFour a.lemon, #lipsFour a.honey, #lipsFour a.passionfruit, #lipsFour a.orange, #lipsFour a.mango, #lipsFour a.peach, #lipsFour a.strawberry, #lipsFour a.watermelon, #lipsFour a.raspberry, #lipsFour a.bubblegum, #lipsFour a.spearmint, #lipsFour a.apple, #lipsFour a.chocolate, #lipsFive .start-again, #lipsFive .buyNowFinished, #footer .logo-container .logo, #footer a.social--links, .icon--small {
   background-image: url(/images/sprite.png);
   background-size: 1000px 1100px;
   background-repeat: no-repeat;
   display: block;
   text-indent: -9999px; }
-  .oldie #intro .logo-welcome, #intro .oldie .logo-welcome, .oldie #intro .logo, #intro .oldie .logo, .oldie #intro .inputBox .submit, #intro .inputBox .oldie .submit, .oldie #intro .inputBox .fb-login, #intro .inputBox .oldie .fb-login, .oldie #intro .inputBox .twitter-login, #intro .inputBox .oldie .twitter-login, .oldie #lets-begin .logo, #lets-begin .oldie .logo, .oldie #lets-begin a.start-making, #lets-begin .oldie a.start-making, .oldie .lips .heading, .lips .oldie .heading, .oldie .lips a.cart.active span.tick, .lips a.cart.active .oldie span.tick, .oldie .lips span.tipr, .lips .oldie span.tipr, .oldie .lips a.next, .lips .oldie a.next, .oldie .lips .tooltip-info span.icon, .lips .tooltip-info .oldie span.icon, .oldie a.back, .oldie #lipsFour a.coconut, #lipsFour .oldie a.coconut, .oldie #lipsFour a.vanilla, #lipsFour .oldie a.vanilla, .oldie #lipsFour a.lemon, #lipsFour .oldie a.lemon, .oldie #lipsFour a.honey, #lipsFour .oldie a.honey, .oldie #lipsFour a.passionfruit, #lipsFour .oldie a.passionfruit, .oldie #lipsFour a.orange, #lipsFour .oldie a.orange, .oldie #lipsFour a.mango, #lipsFour .oldie a.mango, .oldie #lipsFour a.peach, #lipsFour .oldie a.peach, .oldie #lipsFour a.strawberry, #lipsFour .oldie a.strawberry, .oldie #lipsFour a.watermelon, #lipsFour .oldie a.watermelon, .oldie #lipsFour a.raspberry, #lipsFour .oldie a.raspberry, .oldie #lipsFour a.bubblegum, #lipsFour .oldie a.bubblegum, .oldie #lipsFour a.spearmint, #lipsFour .oldie a.spearmint, .oldie #lipsFour a.apple, #lipsFour .oldie a.apple, .oldie #lipsFour a.chocolate, #lipsFour .oldie a.chocolate, .oldie #lipsFive .start-again, #lipsFive .oldie .start-again, .oldie #lipsFive .buyNowFinished, #lipsFive .oldie .buyNowFinished, .oldie #footer .logo-container .logo, #footer .logo-container .oldie .logo, .oldie #footer a.social--links, #footer .oldie a.social--links, .oldie .icon--small {
+  .oldie #intro .logo-welcome, #intro .oldie .logo-welcome, .oldie #intro .logo, #intro .oldie .logo, .oldie #intro .inputBox .submit, #intro .inputBox .oldie .submit, .oldie #intro .inputBox .fb-login, #intro .inputBox .oldie .fb-login, .oldie #intro .inputBox .twitter-login, #intro .inputBox .oldie .twitter-login, .oldie #lets-begin .logo, #lets-begin .oldie .logo, .oldie #lets-begin .start-welcome span.logo-welcome, #lets-begin .start-welcome .oldie span.logo-welcome, .oldie #lets-begin a.start-making, #lets-begin .oldie a.start-making, .oldie .lips .heading, .lips .oldie .heading, .oldie .lips a.cart.active span.tick, .lips a.cart.active .oldie span.tick, .oldie .lips span.tipr, .lips .oldie span.tipr, .oldie .lips a.next, .lips .oldie a.next, .oldie .lips .tooltip-info span.icon, .lips .tooltip-info .oldie span.icon, .oldie a.back, .oldie #lipsFour a.coconut, #lipsFour .oldie a.coconut, .oldie #lipsFour a.vanilla, #lipsFour .oldie a.vanilla, .oldie #lipsFour a.lemon, #lipsFour .oldie a.lemon, .oldie #lipsFour a.honey, #lipsFour .oldie a.honey, .oldie #lipsFour a.passionfruit, #lipsFour .oldie a.passionfruit, .oldie #lipsFour a.orange, #lipsFour .oldie a.orange, .oldie #lipsFour a.mango, #lipsFour .oldie a.mango, .oldie #lipsFour a.peach, #lipsFour .oldie a.peach, .oldie #lipsFour a.strawberry, #lipsFour .oldie a.strawberry, .oldie #lipsFour a.watermelon, #lipsFour .oldie a.watermelon, .oldie #lipsFour a.raspberry, #lipsFour .oldie a.raspberry, .oldie #lipsFour a.bubblegum, #lipsFour .oldie a.bubblegum, .oldie #lipsFour a.spearmint, #lipsFour .oldie a.spearmint, .oldie #lipsFour a.apple, #lipsFour .oldie a.apple, .oldie #lipsFour a.chocolate, #lipsFour .oldie a.chocolate, .oldie #lipsFive .start-again, #lipsFive .oldie .start-again, .oldie #lipsFive .buyNowFinished, #lipsFive .oldie .buyNowFinished, .oldie #footer .logo-container .logo, #footer .logo-container .oldie .logo, .oldie #footer a.social--links, #footer .oldie a.social--links, .oldie .icon--small {
     background-image: url(/images/sprite-small.png); }
 
 .lips a.cart {
@@ -430,15 +430,16 @@ body.active {
   #lets-begin .start-welcome {
     text-align: center;
     color: #a60022;
-    font-size: 60px;
-    line-height: 60px;
+    font-size: 80px;
+    line-height: 71px;
     position: relative;
     padding: 25px 0px 0 0px;
     margin: 15px 0px 0 30px;
     overflow: hidden; }
-    #lets-begin .start-welcome span {
-      font-size: 60px;
-      line-height: 60px; }
+    #lets-begin .start-welcome span.logo-welcome {
+      width: 165px;
+      height: 70px;
+      display: inline-block; }
   #lets-begin .description {
     font-size: 24px;
     line-height: 28px;
@@ -597,20 +598,20 @@ a.back {
 #lipsOne a.cocoa {
   background-position: 0 0; }
   #lipsOne a.cocoa span.tipr {
-    background-position: -299px -335px; }
+    background-position: -498px -335px; }
 #lipsOne a.mango {
   background-position: -353px 0; }
   #lipsOne a.mango span.tipr {
-    background-position: -324px -335px; }
+    background-position: -498px -335px; }
 #lipsOne a.shea {
   background-position: -708px 0; }
   #lipsOne a.shea span.tipr {
-    background-position: -324px -335px; }
+    background-position: -498px -335px; }
 #lipsOne a.coconut {
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
   background-position: 0 -840px; }
   #lipsOne a.coconut span.tipr {
-    background-position: -349px -335px;
+    background-position: -498px -335px;
     text-shadow: none; }
 
 #lipsTwo .heading {
@@ -618,30 +619,30 @@ a.back {
 #lipsTwo a.almond {
   background-position: 0 -289px; }
   #lipsTwo a.almond span.tipr {
-    background-position: -374px -335px; }
+    background-position: -498px -335px; }
 #lipsTwo a.avocado {
   background-position: -348px -287px; }
   #lipsTwo a.avocado span.tipr {
-    background-position: -323px -335px; }
+    background-position: -498px -335px; }
 #lipsTwo a.olive {
   background-position: -702px -289px; }
   #lipsTwo a.olive span.tipr {
-    background-position: -274px -335px; }
+    background-position: -498px -335px; }
 
 #lipsThree .heading {
   background-position: 0 -568px; }
 #lipsThree a.jojoba {
   background-position: 0 -572px; }
   #lipsThree a.jojoba span.tipr {
-    background-position: -299px -335px; }
+    background-position: -498px -335px; }
 #lipsThree a.rosewater {
   background-position: -352px -565px; }
   #lipsThree a.rosewater span.tipr {
-    background-position: -424px -335px; }
+    background-position: -498px -335px; }
 #lipsThree a.orange {
   background-position: -702px -573px; }
   #lipsThree a.orange span.tipr {
-    background-position: -499px -335px; }
+    background-position: -498px -335px; }
 
 #lipsFour {
   min-height: 950px;

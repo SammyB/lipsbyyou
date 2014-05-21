@@ -82,20 +82,6 @@ LBT.utils = {
 		var bloks = 'showBlock';
 		element.toggleClass(bloks);
 		return element.hasClass(bloks);
-	},
-	clearCookies: function () {
-		//console.log('clearing');
-		var cookies = $.cookie();
-		for(var cookie in cookies) {
-			$.removeCookie(cookie);
-		}
-
-		var cookies = document.cookie.split(";");
-		for(var i=0; i < cookies.length; i++) {
-			var equals = cookies[i].indexOf("=");
-			var name = equals > -1 ? cookies[i].substr(0, equals) : cookies[i];
-			document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
-		}
 	}
 };
 
@@ -203,10 +189,6 @@ LBT.Core = (function () {
 
 				LBT.Elements.$buyNowButton.click(function(){
 					finalPayment(result);
-					//console.log(result);
-					LBT.Elements.$loader.show();
-					LBT.Elements.$begin.hide();
-					LBT.Elements.$footer.hide();
 				});
 			}
 			e.preventDefault();
@@ -290,12 +272,13 @@ LBT.Core = (function () {
 		});
 	},
 	finalPayment = function($result) {
+		LBT.Elements.$loader.show();
+		LBT.Elements.$begin.hide();
+		LBT.Elements.$footer.hide();
 		var quantity = LBT.Elements.$form.find('select#quantity option:selected').val(),
 			attributes = $result;
 		// this adds all attributes into hidden field to submit
 		LBT.Elements.$attributes.val('Beeswax,'+attributes);
-		// finally submit my form
-		alert('Thank you for your order! Redirecting you to LipsByTanja to checkout.');
 		// checkout
 		$('form#lipsForm').submit();
 	},

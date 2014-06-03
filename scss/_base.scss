@@ -255,6 +255,9 @@ body.active {background: url("/images/bg-960_active.jpg") #4bdb9e top center no-
 		padding-bottom: 10px !important;
 		margin: 0 !important;
 		span {font-weight: 300;font-size: 18px;line-height: 18px;}
+		.start-welcome {
+			span {font-size: 80px;line-height: 71px;}
+		}
 	}
 	a.cart {
 		display: inline-block;
@@ -534,7 +537,7 @@ a.back {
 	.heading {background-position: 0 -811px}
 	.description { color: $red; padding: 0px !important; }
 	.start-welcome {
-		padding: 40px 30px 20px 0px;
+		padding: 0px 30px 0px 0px;
 	}
 	.order {
 		font-family: $standard-font;

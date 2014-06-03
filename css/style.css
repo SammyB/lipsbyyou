@@ -516,6 +516,9 @@ body.active {
       font-weight: 300;
       font-size: 18px;
       line-height: 18px; }
+    .lips .description .start-welcome span {
+      font-size: 80px;
+      line-height: 71px; }
   .lips a.cart {
     display: inline-block;
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
@@ -739,7 +742,7 @@ a.back {
     color: #dd1212;
     padding: 0px !important; }
   #lipsFive .start-welcome {
-    padding: 40px 30px 20px 0px; }
+    padding: 0px 30px 0px 0px; }
   #lipsFive .order {
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
     font-size: 21px;

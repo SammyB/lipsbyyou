@@ -158,10 +158,10 @@
 				<form id="lipsForm" action="http://www.lipsbytanja.com/cart/add" method="post">
 					<!-- product 1 -->
 					<input type="hidden" name="id" value="559931525" />
-					<!-- product 2
-						<input type="hidden" name="id" value="712322733" />
-					-->
 					<input type="hidden" id="attributes" name="attributes[balm-attributes]" value="" />
+					<input type="hidden" id="attributes2" name="attributes[balm-attributes2]" value="" />
+					<input type="hidden" id="attributes3" name="attributes[balm-attributes3]" value="" />
+					<input type="hidden" id="attributes4" name="attributes[balm-attributes4]" value="" />
 					<!--input type="submit" value="ADD TO SHOPIFY CART" /-->
 					<div id="step1" class="grid__row">
 						<div class="grid__span100">
@@ -437,6 +437,7 @@
 									</div>
 
 									<a href="#" class="start-again" data-click="lets-begin" onclick="logout();">start again</a>
+									<a href="#" class="saveBalmStartFresh" data-count="1">add another balm</a><br>
 									<a href="#" class="buyNowFinished">checkout</a>
 
 								</div>

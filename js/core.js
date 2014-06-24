@@ -19,7 +19,7 @@ LBT.Settings = {
 LBT.Data = {
 
 	// to be used if wanting
-
+	countTheBalms: 1
 };
 
 //Dom Elements
@@ -45,9 +45,13 @@ LBT.Elements = {
 	$lipsFour : $('#lipsFour'),
 	$lipsFive : $('#lipsFive'),
 	$attributes : $('input#attributes'),
+	$attributes2 : $('input#attributes2'),
+	$attributes3 : $('input#attributes3'),
+	$attributes4 : $('input#attributes4'),
 	$finalCart : $('.cart-final'),
 	$finalStep : $('.final--step'),
-	$buyNowButton : $('.buyNowFinished')
+	$buyNowButton : $('.buyNowFinished'),
+	$saveBalmButton : $('.saveBalmStartFresh')
 };
 
 //site utilities
@@ -180,15 +184,27 @@ LBT.Core = (function () {
 
 			// once entered all values
 			if (LBT.Elements.$finalCart.is(':empty') == false) {
+				console.log('result before',result);
 				var letsAddUp = LBT.Elements.$form.find('.cart-final'),
 					result = '';
 				// lets add up what you selected, and created a neat little string
 				result = letsAddUp.map( function(){
 					return $(this).text();
 				}).get().join();
+				console.log('result after',result);
 
 				LBT.Elements.$buyNowButton.click(function(){
 					finalPayment(result);
+				});
+
+				LBT.Elements.$saveBalmButton.unbind().click(function(){
+					console.log('inside click result ',result);
+					saveBalm(result);
+					$('#lipCart-One').html('');
+					$('#lipCart-Two').html('');
+					$('#lipCart-Three').html('');
+					$('#lipCart-Four').html('');
+					result = '';
 				});
 			}
 			e.preventDefault();
@@ -199,6 +215,12 @@ LBT.Core = (function () {
 				alert('Please finish all steps before proceeding to checkout.');
 			}
 		});
+		LBT.Elements.$saveBalmButton.click(function(){
+			if (LBT.Elements.$finalCart.is(':empty') == true) {
+				alert('Please finish all steps before proceeding to save your balm.');
+			}
+		});
+		
 	},
 	contactForm = function () {
 		$("#submit_btn").click(function() { 
@@ -281,6 +303,50 @@ LBT.Core = (function () {
 		LBT.Elements.$attributes.val('Beeswax,'+attributes);
 		// checkout
 		$('form#lipsForm').submit();
+	},
+	saveBalm = function($result) {
+
+		console.log(LBT.Data.countTheBalms);
+
+		// checks if you have already created balms, and sets up for others
+		if (LBT.Data.countTheBalms === 4) {
+
+			if (LBT.Elements.$attributes4.val() == ''){
+				LBT.Elements.$attributes4.val('Beeswax,'+$result);
+				console.log(LBT.Elements.$attributes4.val());
+				LBT.Data.countTheBalms++;
+			}
+
+		} 
+		if (LBT.Data.countTheBalms === 3) {
+
+			if (LBT.Elements.$attributes3.val() == ''){
+				LBT.Elements.$attributes3.val('Beeswax,'+$result);
+				console.log(LBT.Elements.$attributes3.val());
+				LBT.Data.countTheBalms++;
+			}
+
+		} 
+		if (LBT.Data.countTheBalms === 2) {
+			if (LBT.Elements.$attributes2.val() == ''){
+				LBT.Elements.$attributes2.val('Beeswax,'+$result);
+				LBT.Data.countTheBalms++;
+			}
+
+		} 
+		if (LBT.Data.countTheBalms === 1) {
+
+			if (LBT.Elements.$attributes.val() == ''){
+				LBT.Elements.$attributes.val('Beeswax,'+$result);
+				console.log(LBT.Elements.$attributes.val());
+				LBT.Data.countTheBalms++;
+			}
+		}
+
+		LBT.Elements.$saveBalmButton.attr('data-count',LBT.Data.countTheBalms);
+		console.log('count ',LBT.Data.countTheBalms);
+		//ok all saved, lets set stuff back
+		LBT.Elements.$form.find('.active').removeClass('active');
 	},
 	login = {
 		init: function () {

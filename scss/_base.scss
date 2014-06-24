@@ -599,6 +599,18 @@ a.back {
 			background-position: -624px -261px;
 		}
 	}
+	.saveBalmStartFresh {
+		@extend %sprite;
+		display: inline-block;
+		width: 240px;
+		height: 60px;
+		background-position: 0px -1025px;
+		padding-right: 10px;
+		margin-top: 10px;
+		&:hover {
+			background-position: 0px -1087px;
+		}
+	}
 	.buyNowFinished {
 		@extend %sprite;
 		display: inline-block;

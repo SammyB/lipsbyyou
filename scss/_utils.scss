@@ -67,7 +67,7 @@ $standard-font: 'Open Sans', Arial, Helvetica, sans-serif;
 
 /* ==|== sprites ======================================================= */
 
-%sprite { background-image: url(/images/sprite.png); background-size: 1000px 1100px; background-repeat: no-repeat; display: block; text-indent: -9999px;
+%sprite { background-image: url(/images/sprite.png); background-size: 1000px 1150px; background-repeat: no-repeat; display: block; text-indent: -9999px;
     .oldie & { background-image: url(/images/sprite-small.png) }
 }
 %sprite-circles { background-image: url(/images/spriteCircles.png); background-size: 1000px 1100px; background-repeat: no-repeat; display: block;

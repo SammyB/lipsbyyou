@@ -184,7 +184,7 @@ LBT.Core = (function () {
 			$('.current--cart').addClass('show').show();
 
 			// once entered all values
-			if ((LBT.Elements.$finalCart.is(':empty') == false) || (LBT.Elements.$balmQuantity.find('#quantity_balm1 span').is(':empty') == false)) {
+			if ((LBT.Elements.$finalCart.is(':empty') == false) || (LBT.Elements.$balmQuantity.find('#quantity_balm1 span').is(':empty') == true)) {
 				console.log('result before',result);
 				var letsAddUp = LBT.Elements.$form.find('.cart-final'),
 					result = '';
@@ -212,13 +212,13 @@ LBT.Core = (function () {
 		});
 		/* finish steps on form to proceed */
 		LBT.Elements.$buyNowButton.click(function(){
-			if ((LBT.Elements.$finalCart.is(':empty') == false) || (LBT.Elements.$balmQuantity.find('#quantity_balm1 span').is(':empty') == false)) {
-				alert('Please finish all steps before proceeding to checkout.');
+			if ((LBT.Elements.$finalCart.is(':empty') == false) || (LBT.Elements.$balmQuantity.find('#quantity_balm1 span').is(':empty') == true)) {
+				alert('1 Please finish all steps before proceeding to checkout.');
 			}
 		});
 		LBT.Elements.$saveBalmButton.click(function(){
-			if ((LBT.Elements.$finalCart.is(':empty') == false) || (LBT.Elements.$balmQuantity.find('#quantity_balm1 span').is(':empty') == false)) {
-				alert('Please finish all steps before proceeding to save your balm.');
+			if ((LBT.Elements.$finalCart.is(':empty') == false) || (LBT.Elements.$balmQuantity.find('#quantity_balm1 span').is(':empty') == true)) {
+				alert('2 Please finish all steps before proceeding to save your balm.');
 			}
 		});
 		

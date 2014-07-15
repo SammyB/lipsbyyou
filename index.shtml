@@ -156,12 +156,16 @@
 
 				<!-- step 1 -->
 				<form id="lipsForm" action="http://www.lipsbytanja.com/cart/add" method="post">
-					<!-- product 1 -->
-					<input type="hidden" name="id" value="559931525" />
-					<input type="hidden" id="attributes" name="attributes[balm-attributes]" value="" />
-					<input type="hidden" id="attributes2" name="attributes[balm-attributes2]" value="" />
-					<input type="hidden" id="attributes3" name="attributes[balm-attributes3]" value="" />
-					<input type="hidden" id="attributes4" name="attributes[balm-attributes4]" value="" />
+
+					<input name="id[]" value="559931525" type="hidden">
+					<input name="id[]" value="846285025" type="hidden">
+					<input name="id[]" value="846285673" type="hidden">
+					<input name="id[]" value="846286333" type="hidden">
+
+					<input type="hidden" id="attributes" name="attributes[balm-attributes]" value="test" />    <!-- product 1 ID 559931525 -->
+					<input type="hidden" id="attributes2" name="attributes[balm-attributes2]" value="test 2" />  <!-- product 2 ID 846285025 -->
+					<input type="hidden" id="attributes3" name="attributes[balm-attributes3]" value="test 3" />  <!-- product 3 ID 846285673 -->
+					<input type="hidden" id="attributes4" name="attributes[balm-attributes4]" value="test 4" />  <!-- product 4 ID 846286333 -->
 					<!--input type="submit" value="ADD TO SHOPIFY CART" /-->
 					<div id="step1" class="grid__row">
 						<div class="grid__span100">

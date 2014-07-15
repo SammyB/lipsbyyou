@@ -238,7 +238,7 @@ LBT.Core = (function () {
 				//instead of $.post() we are using $.ajax()
 				//that's because $.ajax() has more options and can be used more flexibly.
 				$.ajax({
-				  url: '/lookingHOT/contact_me.php',
+				  url: '/contact_me.php',
 				  data: post_data,
 				  processData: false,
 				  contentType: false,

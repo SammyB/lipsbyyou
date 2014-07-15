@@ -11,7 +11,7 @@ if(!file_exists('counter.txt')){
 			<meta charset="utf-8" />
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-			<title>LipsByYou | Design your own custom lip balm! | Handmade with love in Canberra, Australia.</title>
+			<title>LipsByYou | Design your own custom lip balm with lips by you! | Handmade with love in Canberra, Australia.</title>
 
 			<meta name="keywords" content="Lipsbyyou, lipsbytanja, custom lip balm, lip balm, lipbalm, canberra, australia, skin balm, skin care, lip care, lips by you, lips by tanja." />
 			<meta name="description" content="Design your own custom lip balm using natural ingredients and delicious colours and flavours. You'll get to pick what's in your balm and best of all it will be your own unique creation!" />
@@ -544,6 +544,7 @@ if(!file_exists('counter.txt')){
 								<div class="social">
 									<a href="http://www.facebook.com/lipsbytanja" target="_blank" class="social--links facebook">Follow us on Facebook.</a>
 									<a href="http://www.twitter.com/lipsbytanja" target="_blank" class="social--links twitter">Follow us on Twitter.</a>
+									<a href="http://instagram.com/lipsbytanja" target="_blank" class="social--links instagram">Follow us on Instagram.</a>
 									<a data-remodal-target="modal" href="#modal" class="social--links mail">Email us anytime.</a>
 								</div>
 

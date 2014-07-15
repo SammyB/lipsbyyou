@@ -436,6 +436,13 @@
 										</p>
 									</div>
 
+									<div class="quantity-list">
+										<p id="quantity_balm1"><strong>Combination One:</strong> <span></span></p>
+										<p id="quantity_balm2"><strong>Combination Two:</strong> <span></span></p>
+										<p id="quantity_balm3"><strong>Combination Three:</strong> <span></span></p>
+										<p id="quantity_balm4"><strong>Combination Four:</strong> <span></span></p>
+									</div>
+
 									<a href="#" class="start-again" data-click="lets-begin" onclick="logout();">start again</a>
 									<a href="#" class="saveBalmStartFresh" data-count="1">add another balm</a><br>
 									<a href="#" class="buyNowFinished">checkout</a>

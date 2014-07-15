@@ -51,7 +51,8 @@ LBT.Elements = {
 	$finalCart : $('.cart-final'),
 	$finalStep : $('.final--step'),
 	$buyNowButton : $('.buyNowFinished'),
-	$saveBalmButton : $('.saveBalmStartFresh')
+	$saveBalmButton : $('.saveBalmStartFresh'),
+	$balmQuantity : $('.quantity-list')
 };
 
 //site utilities
@@ -183,7 +184,7 @@ LBT.Core = (function () {
 			$('.current--cart').addClass('show').show();
 
 			// once entered all values
-			if (LBT.Elements.$finalCart.is(':empty') == false) {
+			if ((LBT.Elements.$finalCart.is(':empty') == false) || (LBT.Elements.$balmQuantity.find('#quantity_balm1 span').is(':empty') == false)) {
 				console.log('result before',result);
 				var letsAddUp = LBT.Elements.$form.find('.cart-final'),
 					result = '';
@@ -211,12 +212,12 @@ LBT.Core = (function () {
 		});
 		/* finish steps on form to proceed */
 		LBT.Elements.$buyNowButton.click(function(){
-			if (LBT.Elements.$finalCart.is(':empty') == true) {
+			if ((LBT.Elements.$finalCart.is(':empty') == false) || (LBT.Elements.$balmQuantity.find('#quantity_balm1 span').is(':empty') == false)) {
 				alert('Please finish all steps before proceeding to checkout.');
 			}
 		});
 		LBT.Elements.$saveBalmButton.click(function(){
-			if (LBT.Elements.$finalCart.is(':empty') == true) {
+			if ((LBT.Elements.$finalCart.is(':empty') == false) || (LBT.Elements.$balmQuantity.find('#quantity_balm1 span').is(':empty') == false)) {
 				alert('Please finish all steps before proceeding to save your balm.');
 			}
 		});
@@ -260,7 +261,7 @@ LBT.Core = (function () {
 				//instead of $.post() we are using $.ajax()
 				//that's because $.ajax() has more options and can be used more flexibly.
 				$.ajax({
-				  url: '/lookingHOT/contact_me.php',
+				  url: '/contact_me.php',
 				  data: post_data,
 				  processData: false,
 				  contentType: false,
@@ -313,6 +314,8 @@ LBT.Core = (function () {
 
 			if (LBT.Elements.$attributes4.val() == ''){
 				LBT.Elements.$attributes4.val('Beeswax,'+$result);
+				LBT.Elements.$balmQuantity.find('#quantity_balm4 span').html('Beeswax,'+$result);
+				LBT.Elements.$balmQuantity.find('#quantity_balm4').show();
 				console.log(LBT.Elements.$attributes4.val());
 				LBT.Data.countTheBalms++;
 			}
@@ -322,6 +325,8 @@ LBT.Core = (function () {
 
 			if (LBT.Elements.$attributes3.val() == ''){
 				LBT.Elements.$attributes3.val('Beeswax,'+$result);
+				LBT.Elements.$balmQuantity.find('#quantity_balm3 span').html('Beeswax,'+$result);
+				LBT.Elements.$balmQuantity.find('#quantity_balm3').show();
 				console.log(LBT.Elements.$attributes3.val());
 				LBT.Data.countTheBalms++;
 			}
@@ -330,6 +335,8 @@ LBT.Core = (function () {
 		if (LBT.Data.countTheBalms === 2) {
 			if (LBT.Elements.$attributes2.val() == ''){
 				LBT.Elements.$attributes2.val('Beeswax,'+$result);
+				LBT.Elements.$balmQuantity.find('#quantity_balm2 span').html('Beeswax,'+$result);
+				LBT.Elements.$balmQuantity.find('#quantity_balm2').show();
 				LBT.Data.countTheBalms++;
 			}
 
@@ -338,6 +345,8 @@ LBT.Core = (function () {
 
 			if (LBT.Elements.$attributes.val() == ''){
 				LBT.Elements.$attributes.val('Beeswax,'+$result);
+				LBT.Elements.$balmQuantity.find('#quantity_balm1 span').html('Beeswax,'+$result);
+				LBT.Elements.$balmQuantity.find('#quantity_balm1').show();
 				console.log(LBT.Elements.$attributes.val());
 				LBT.Data.countTheBalms++;
 			}

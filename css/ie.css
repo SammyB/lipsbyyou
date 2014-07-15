@@ -485,7 +485,26 @@ body.active {
   min-height: 760px;
   background-size: cover; }
   #step5 .lips {
-    min-height: 760px; }
+    min-height: 800px; }
+  #step5 .quantity-list {
+    padding-bottom: 10px; }
+    #step5 .quantity-list p {
+      margin: 0px;
+      line-height: 15px;
+      padding: 0px;
+      font-size: 12px; }
+
+#quantity_balm1 {
+  display: none; }
+
+#quantity_balm2 {
+  display: none; }
+
+#quantity_balm3 {
+  display: none; }
+
+#quantity_balm4 {
+  display: none; }
 
 .lips {
   margin: 0 auto;
